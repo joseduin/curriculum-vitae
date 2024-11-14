@@ -47,6 +47,10 @@
       .text-color {
         color: var(--background-color);
       }
+      .text-qr {
+        padding: 16px 0;
+        color: white;
+      }
       .borders-bottom-radius {
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
@@ -71,7 +75,7 @@
       .icon-wrap .icon {
         width: calc(var(--icon-size) * 0.9);
         height: calc(var(--icon-size) * 0.9);
-        background-image: url("https://drive.google.com/uc?id=1eRT-Wx9tod5d28pTnA7LOptS_V34QqOB");
+        background-image: url("https://raw.githubusercontent.com/joseduin/qr-card-profile/main/img/icons.png");
         background-repeat: no-repeat;
         display: inline-block;
         background-size: cover;
@@ -125,6 +129,7 @@
       }
       .info-wrap {
         width: var(--card-width);
+        max-width: var(--card-width);
         height: var(--card-height);
         position: relative;
         transform-style: preserve-3d;
@@ -132,12 +137,14 @@
       }
       .slide-wrap {
         position: relative;
-        width: 100%;
+        width: var(--card-width);
+        max-width: var(--card-width);
         height: 100%;
       }
       .side-a {
         position: absolute;
         width: var(--card-width);
+        max-width: var(--card-width);
         height: 100%;
         backface-visibility: hidden;
         background-color: #f1f1f1;
@@ -149,7 +156,7 @@
       .side-a .slide-wrap .background {
         width: var(--card-width);
         height: calc(var(--background-height) * 0.8);
-        background: url("https://drive.google.com/thumbnail?id=1PER_ArdIpKgharu9I5ob5jM0RqOcrzPx");
+        background: url("https://raw.githubusercontent.com/joseduin/qr-card-profile/main/img/backgrounnd.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position-y: calc(var(--background-height) * -0.2);
@@ -211,6 +218,7 @@
       .side-b {
         position: absolute;
         width: var(--card-width);
+        max-width: var(--card-width);
         height: 100%;
         backface-visibility: hidden;
         background-color: var(--background-color);
@@ -228,6 +236,14 @@
         background: var(--background-color-light);
         width: calc(var(--card-width) * 0.8);
         height: calc(var(--card-width) * 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .qr-container img {
+        width: calc(var(--card-width) * 0.6);
+        height: calc(var(--card-width) * 0.6);
       }
     </style>
   </head>
@@ -242,7 +258,7 @@
             <div class="body">
               <section class="personal flex-1">
                 <div class="circle-img">
-                  <img src="https://drive.google.com/thumbnail?id=1MGiGvdracvt0nMWglU45k5MBWPwMlFYE" alt="me" />
+                  <img src="https://raw.githubusercontent.com/joseduin/qr-card-profile/main/img/me.jpg" alt="me" />
                 </div>
                 <h1>Jose Duin</h1>
                 <span id="rol"></span>
@@ -315,7 +331,8 @@
         <div class="side-b borders-top-radius borders-bottom-radius">
           <div class="slide-wrap">
             <div class="qr-container borders-top-radius borders-bottom-radius">
-              <img id="qr" src="" alt="QR" />
+              <h1 class="text-qr">Currículum Vitae</h1>
+              <img id="qr" src="" alt="QR" class="borders-top-radius borders-bottom-radius" />
             </div>
           </div>
         </div>
@@ -326,11 +343,11 @@
       const data = {
         developer: {
           label: "DEVELOPER MOBILE",
-          qr: "https://drive.google.com/thumbnail?id=11W0k5v_QbRiOIV1BzqLU8uSNrqnxBvva",
+          qr: "https://raw.githubusercontent.com/joseduin/qr-card-profile/main/img/qr-developer.png",
         },
         teacher: {
           label: "TECH LEAD",
-          qr: "https://drive.google.com/thumbnail?id=189gOcuB1WwD61OWehFB8E3YTdZges0TI",
+          qr: "https://raw.githubusercontent.com/joseduin/qr-card-profile/main/img/qr-tech-lead.png",
         },
       };
       function flipCard() {
@@ -342,9 +359,9 @@
       }
       // Tu JavaScript personalizado
       document.addEventListener("DOMContentLoaded", function () {
-        console.log("Página cargada");
         const qr = document.getElementById("qr");
         qr.src = data.developer.qr;
+
         const rol = document.getElementById("rol");
         rol.innerText = data.developer.label;
       });
