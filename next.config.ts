@@ -6,7 +6,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/curriculum-vitae'
+  basePath: '/curriculum/vitae',
+  assetPrefix: '/curriculum/vitae',
+  distDir: 'vitae',
 };
 
 export default nextConfig;
