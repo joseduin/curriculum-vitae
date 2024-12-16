@@ -11,7 +11,7 @@ export const Skills = () => {
         <div className="d-flex flex-row gap-2 px-3">
           {SKILLS.map((skill) => (
             <div key={skill.id} className={`${styles.skill} bg-gray-100 br p-2`}>
-              <img src={`${process.env.NEXT_PUBLIC_BASE_PATH}${skill.src}`} alt={skill.id} />
+              <img src={`/curriculum-vitae${skill.src}`} alt={skill.id} />
             </div>
           ))}
         </div>
