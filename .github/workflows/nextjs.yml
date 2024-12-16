@@ -31,8 +31,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # Asegura que todos los commits estén disponibles
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -93,5 +91,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-      - name: Display commit hash
-      run: echo "Commit: $GITHUB_SHA"
