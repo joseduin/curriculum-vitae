@@ -93,3 +93,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Display commit hash
+        run: echo "Commit: $GITHUB_SHA"
