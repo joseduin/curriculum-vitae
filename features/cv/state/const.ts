@@ -9,76 +9,76 @@ export const INFO = {
 export const SKILLS = [
   {
     id: "ts",
-    src: "/skill/ts.png",
+    src: "/ts.png",
   },
   {
     id: "js",
-    src: "/skill/js.png",
+    src: "/js.png",
   },
   {
     id: "react",
-    src: "/skill/react.png",
+    src: "/react.png",
   },
   {
     id: "angular",
-    src: "/skill/angular.png",
+    src: "/angular.png",
   },
   {
     id: "ionic",
-    src: "/skill/ionic.png",
+    src: "/ionic.png",
   },
   {
     id: "nextjs",
-    src: "/skill/nextjs.png",
+    src: "/nextjs.png",
   },
   {
     id: "java",
-    src: "/skill/java.png",
+    src: "/java.png",
   },
   {
     id: "swift",
-    src: "/skill/swift.png",
+    src: "/swift.png",
   },
   {
     id: "android",
-    src: "/skill/android.png",
+    src: "/android.png",
   },
   {
     id: "ios",
-    src: "/skill/ios.png",
+    src: "/ios.png",
   },
   {
     id: "capacitor",
-    src: "/skill/capacitor.png",
+    src: "/capacitor.png",
   },
   {
     id: "redux",
-    src: "/skill/redux.png",
+    src: "/redux.png",
   },
   {
     id: "githutb",
-    src: "/skill/githutb.png",
+    src: "/githutb.png",
   },
 ];
 
 export const ROLE = {
   es: {
     developer: {
-      qr: "/qr/qr-developer.png",
+      qr: "/qr-developer.png",
       link: "https://drive.google.com/file/d/1CeZXA331rRQusLFgXJ9IesYDAtginvJz/view?usp=drive_link"
     },
     tech_lead: {
-      qr: "/qr/qr-tech-lead.png",
+      qr: "/qr-tech-lead.png",
       link: "https://drive.google.com/file/d/1i85UL69gN5wiA6yXSuTTzHV819rWeGYy/view?usp=drive_link"
     }
   },
   en : {
     developer:  {
-      qr: "/qr/qr-developer.png",
+      qr: "/qr-developer.png",
       link: "https://drive.google.com/file/d/1CeZXA331rRQusLFgXJ9IesYDAtginvJz/view?usp=drive_link"
     },
     tech_lead: {
-      qr: "/qr/qr-tech-lead.png",
+      qr: "/qr-tech-lead.png",
       link: "https://drive.google.com/file/d/1i85UL69gN5wiA6yXSuTTzHV819rWeGYy/view?usp=drive_link"
     }
   }
