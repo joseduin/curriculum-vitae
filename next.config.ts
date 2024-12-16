@@ -6,9 +6,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/curriculum/vitae',
-  assetPrefix: '/curriculum/vitae',
-  distDir: 'vitae',
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || '',
+  distDir: 'curriculum-vitae',
 };
 
 export default nextConfig;

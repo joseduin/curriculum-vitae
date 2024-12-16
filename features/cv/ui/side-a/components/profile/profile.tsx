@@ -11,7 +11,7 @@ export const Profile = ({ role }: ProfileProps) => {
     <div
       className={`${styles.background} d-flex flex-column align-items-center justify-content-center bg-primary-dark mx-3 p-3`}
     >
-      <img src={`/me.jpg`} alt="me" className={styles.img} />
+      <img src={`${process.env.NEXT_PUBLIC_BASE_PATH}/me.jpg`} alt="me" className={styles.img} />
       <span className="fs-3 fw-semibold mt-2">{INFO.full_name}</span>
       <span className="fs-6 fw-normal">{Translation.key(role)}</span>
     </div>

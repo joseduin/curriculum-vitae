@@ -16,7 +16,7 @@ const SideB = ({ role }: SideBProps) => {
         <span className="ts-4 fw-semibold">{Translation.key('curriculum_vitae')}</span>
         <span className="ts-6 fw-normal mb-3 text-center">{Translation.key('scan_or_click_qr')}</span>
         <a href={qr.link} target="_blank" rel="noreferrer">
-          <img src={qr.qr} alt="QR Code" className={styles.qr} />
+          <img src={`${process.env.NEXT_PUBLIC_BASE_PATH}${qr.qr}`} alt="QR Code" className={styles.qr} />
         </a>
       </div>
     </div>
