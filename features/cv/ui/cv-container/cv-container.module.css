@@ -1,0 +1,40 @@
+/* styles/FlipCard.module.css */
+.card {
+  width: var(--card-width);
+  height: var(--card-height);
+  aspect-ratio: 9/16;
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
+}
+
+.card .front,
+.card .back {
+  width: var(--card-width);
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--gray-600);
+  border-radius: var(--border-radius);
+  background-color: var(--gray-600);
+  transition: transform 0.6s ease-in-out;
+}
+
+.front {
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.card.flipped .front {
+  transform: rotateY(-180deg);
+}
+
+.card.flipped .back {
+  transform: rotateY(0deg);
+}

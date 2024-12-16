@@ -1,0 +1,11 @@
+.img {
+    width: var(--image-profile);
+    height: var(--image-profile);
+    object-fit: cover;
+    border-radius: 50%;
+}
+.background {
+    width: calc(var(--card-width) - 2rem);
+    height: calc(var(--card-width) * 0.8);
+    border-radius: var(--border-radius);
+}

@@ -1,0 +1,10 @@
+.scrollContainer {
+  flex: 1;
+  overflow-x: scroll;
+  display: flex;
+  white-space: nowrap;
+}
+
+.scrollContent {
+  display: flex;
+}

@@ -1,0 +1,4 @@
+.qr {
+    width: calc(var(--card-width) - (1rem * 4));
+    border-radius: var(--border-radius);
+}

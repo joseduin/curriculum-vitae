@@ -1,0 +1,8 @@
+.skill {
+    width: 25%;
+    height: fit-content;
+}
+.skill img {
+    width: 80px;
+    object-fit: contain;
+}
