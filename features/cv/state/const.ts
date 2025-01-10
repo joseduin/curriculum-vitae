@@ -64,22 +64,22 @@ export const SKILLS = [
 export const ROLE = {
   es: {
     developer: {
-      qr: "/qr-developer.png",
-      link: "https://drive.google.com/file/d/1CeZXA331rRQusLFgXJ9IesYDAtginvJz/view?usp=drive_link"
+      qr: "/qr_developer.png",
+      link: "https://drive.google.com/file/d/1yfgRsO8tWsq4vuno_zesHwPuQ3I8WOkI/view?usp=sharing"
     },
     tech_lead: {
-      qr: "/qr-tech-lead.png",
-      link: "https://drive.google.com/file/d/1i85UL69gN5wiA6yXSuTTzHV819rWeGYy/view?usp=drive_link"
+      qr: "/qr_tech_lead.png",
+      link: "https://drive.google.com/file/d/1xc9r1AI9s3ElN8ktV7_uhU7d3bRZo9u2/view?usp=sharing"
     }
   },
   en : {
     developer:  {
-      qr: "/qr-developer.png",
-      link: "https://drive.google.com/file/d/1CeZXA331rRQusLFgXJ9IesYDAtginvJz/view?usp=drive_link"
+      qr: "/qr_developer.png",
+      link: "https://drive.google.com/file/d/1yfgRsO8tWsq4vuno_zesHwPuQ3I8WOkI/view?usp=sharing"
     },
     tech_lead: {
-      qr: "/qr-tech-lead.png",
-      link: "https://drive.google.com/file/d/1i85UL69gN5wiA6yXSuTTzHV819rWeGYy/view?usp=drive_link"
+      qr: "/qr_tech_lead.png",
+      link: "https://drive.google.com/file/d/1xc9r1AI9s3ElN8ktV7_uhU7d3bRZo9u2/view?usp=sharing"
     }
   }
 }
